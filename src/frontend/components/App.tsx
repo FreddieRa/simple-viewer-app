@@ -486,7 +486,7 @@ class IModelComponents extends React.PureComponent<IModelComponentsProps, IModel
                     <p>Depth slice:</p>
                     <RangeOfTwo min={0}
                                 max={8000}
-                                defaultValue={[0, 1000]}
+                                defaultValue={[0, 2000]}
                                 onChange={this._sliderChange}
                     />
                 </div>
