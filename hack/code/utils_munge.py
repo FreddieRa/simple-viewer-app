@@ -18,8 +18,9 @@ def clean_coordinates(frame, mode='link'):
         frame.drop(['from', 'to'], axis=1, inplace=True)
 
     if mode == 'node':
-        frame[['X', 'Y']] = split_coor(frame, 'location').astype(float)
-        frame.drop('location', axis=1, inplace=True)
+        # frame[['X', 'Y']] = split_coor(frame, 'location').astype(float)
+        frame[['X', 'Y']] = frame[['xcoord', 'ycoord']]
+        # frame.drop('location', axis=1, inplace=True)
     return frame
 
 def convert_dtypes(frame, col_list):
