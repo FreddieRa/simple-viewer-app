@@ -4,13 +4,13 @@ from sklearn.model_selection import train_test_split
 from convertbng.util import convert_bng
 from time import time
 import os
-os.chdir(r'C:\Users\vu86683\Desktop\simple-viewer-app\hack\code')
+os.chdir(r'./')
 from utils_munge import *
 import json
 
-data_path = r'C:\Users\vu86683\Desktop\simple-viewer-app\hack/data/extracted'
+data_path = r'../data/extracted/IF19'
 
-result_path = r'C:\Users\vu86683\Desktop\simple-viewer-app\hack\data\result'
+result_path = r'../data/result/IF19'
 
 data_list = os.listdir(data_path)
 
