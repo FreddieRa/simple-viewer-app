@@ -34,7 +34,7 @@ nodes = nodes[['X', 'Y', 'NodeRefere', 'InvertDept', 'CoverLevel']]
 #coordinate start is always from upnode
 # merge nodes
 frame = merge_nodes(frame, nodes)
-        
+
 # Impute missing
 # Depth
 frame = impute_depth(frame)
